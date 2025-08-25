@@ -2,21 +2,21 @@
 
 This project is a professional adaptation of my final lab assignment in **Digital Control Systems**, focusing on **Z-transform analysis**, **stability checks**, and **time/frequency domain simulations** using **MATLAB**.
 
-It demonstrates the full engineering workflow from theoretical formulation to simulation, visualization, and result extraction – all structured for clarity, reproducibility, and GitHub presentation.
+It demonstrates the full engineering workflow from theoretical formulation to simulation, visualization, and result extraction – all structured for clarity, reproducibility and clean repository presentation.
 
 ---
 
 ## 📁 Project Structure
 
+```
 digital-control-lab/
-├── code/              ← All MATLAB code (main.m, functions, etc.)
-├── plots/             ← Auto-generated figures: step response, bode, pzmap
-├── report/            ← Original lab PDF report
-├── results/           ← Output summaries and analysis (e.g., summary.txt)
-├── README.md          ← This file – project overview
-└── LICENSE            ← MIT license for reuse
-
-
+├── code/            ← All MATLAB code (main.m, functions, etc.)
+├── plots/           ← Auto-generated figures: step response, bode, pzmap
+├── report/          ← Original lab PDF report
+├── results/         ← Output summaries and analysis (e.g., summary.txt)
+├── README.md        ← This file – project overview
+└── LICENSE          ← MIT license for reuse
+```
 ---
 
 ## ⚙️ Key Concepts
