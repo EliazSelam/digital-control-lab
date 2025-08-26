@@ -1,67 +1,54 @@
 # 🔧 Digital Control Lab – Final Project
 
-This project is a professional adaptation of my final lab assignment in **Digital Control Systems**, focusing on **Z-transform analysis**, **stability checks**, and **time/frequency domain simulations** using **MATLAB**.
+This project is a professional adaptation of my **final lab assignment** in **Digital Control Systems**, focusing on **Z-transform analysis**, **stability checks**, and **time/frequency domain simulations** using **MATLAB**.
 
-It demonstrates the full engineering workflow from theoretical formulation to simulation, visualization, and result extraction – all structured for clarity, reproducibility and clean repository presentation.
-
+It demonstrates the full **engineering workflow** from **theoretical formulation** to **simulation**, **visualization**, and **result extraction** – all structured for **clarity**, **reproducibility**, and **clean repository presentation**.
 ---
 
 ## 📁 Project Structure
 
-```
 digital-control-lab/
-├── code/            ← All MATLAB code (main.m, functions, etc.)
-├── plots/           ← Auto-generated figures: step response, bode, pzmap
-├── report/          ← Original lab PDF report
-├── results/         ← Output summaries and analysis (e.g., summary.txt)
-├── README.md        ← This file – project overview
-└── LICENSE          ← MIT license for reuse
-```
+├── code/             ← MATLAB code (digital_control_script.m)
+├── plots/            ← Auto-generated figures: step response, pzmap, etc.
+├── Theory/           ← Theoretical background and numeric summary
+├── README.md         ← This file – project overview
 ---
 
 ## ⚙️ Key Concepts
 
-- Discrete-time transfer functions
-- Z-transform pole-zero analysis
-- Root locus and step response
-- Bode plot in Z-domain
-- Stability check (unit-circle test)
-- Simulation with MATLAB Control Toolbox
-
+	•	Discrete-time state-space representation
+	•	State-feedback via pole placement
+	•	Dead-beat observer design
+	•	DC gain compensation (steady-state tracking)
+	•	Controller-only vs observer-based simulation
+	•	Pole-zero analysis & stability via Z-domain
+	•	MATLAB Control Toolbox usage
 ---
 
 ## 🚀 How to Run
 
-1. Open `code/main.m` in MATLAB
-2. Run the script to:
-   - Define the system
-   - Simulate and plot responses
-   - Save output to `/plots/` and `/results/`
-3. Check `/results/summary.txt` for numeric analysis
-4. Review generated plots for insight
+	1.	Open code/digital_control_script.m in MATLAB
+	2.	Run the script to:
+	•	Define the system
+	•	Simulate and plot responses
+	•	Save output to /plots/ and /Theory/
+	3.	Check Theory/summary.txt for numeric results
+	4.	Review generated plots in plots/ for visual insight
 
 ---
 
 ## 📊 Sample Outputs
 
-All plots are saved automatically to `/plots/` when running the code:
-
-- `step_response.png`
-- `bode_plot.png`
-- `pzmap.png`
-
-You can embed them into the README for visual showcase.
+When the script runs, the following plots are generated:
+	•	step_response.png – Closed-loop system response
+	•	pzmap.png – Pole-zero map
+	•	simulation_comparison.png – Output: full-state vs observer
+	•	state_estimation_error.png – Error between true and estimated states
 
 ---
 
 ## 🧠 Motivation
 
-This project showcases both theoretical understanding and clean engineering workflow. The goal is to make it easy to follow, reproduce, and adapt to real-world discrete control tasks.
-
----
-
-## 📄 License
-
-This project is released under the [MIT License](LICENSE) – feel free to reuse and adapt with credit.
-
----
+This project demonstrates a full discrete control design pipeline: from system definition to simulation,
+backed by theoretical context and clear MATLAB implementation.
+It’s designed to be understandable, reusable, and easily adaptable for similar academic or engineering tasks.
