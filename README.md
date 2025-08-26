@@ -5,12 +5,13 @@ It demonstrates the full engineering workflow from theoretical formulation to si
 
 
 ## 📁 Project Structure
+
 digital-control-lab/
-├── code/             ← All MATLAB code (main.m, functions, etc.)
-├── plots/            ← Auto-generated figures: step response, pzmap, etc.
-├── report/           ← Original lab PDF report
-├── Theory/           ← Includes theory background and numeric summary
-├── README.md         ← This file – project overview
+├── code/            ← All MATLAB code (main.m, functions, etc.)
+├── plots/           ← Auto-generated figures: step response, bode, pzmap
+├── report/          ← Original lab PDF report
+├── Theory/          ← Includes theory background and numeric summary
+└── README.md        ← This file – project overview
 
 ## ⚙️ Key Concepts
 
