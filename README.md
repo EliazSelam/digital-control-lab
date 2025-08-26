@@ -38,17 +38,18 @@ digital-control-lab/
 ---
 
 ## 📊 Sample Outputs
-
+```
 When the script runs, the following plots are generated:
 	•	step_response.png – Closed-loop system response
 	•	pzmap.png – Pole-zero map
 	•	simulation_comparison.png – Output: full-state vs observer
 	•	state_estimation_error.png – Error between true and estimated states
-
+```
 ---
 
 ## 🧠 Motivation
-
+```
 This project demonstrates a full discrete control design pipeline: from system definition to simulation,
 backed by theoretical context and clear MATLAB implementation.
 It’s designed to be understandable, reusable, and easily adaptable for similar academic or engineering tasks.
+```
