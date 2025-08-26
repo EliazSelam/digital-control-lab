@@ -1,5 +1,5 @@
-# 🔧 Digital Control Lab – Final Project
-This project is a professional adaptation of my final lab assignment in **Digital Control Systems**, focusing on **Z-transform analysis**, **stability checks**, and **time/frequency domain simulations** using **MATLAB**.
+# 🔧 Digital Control – Project
+This project is a professional adaptation of an academic task in **Digital Control Systems**, focusing on **Z-transform analysis**, **stability checks**, and **time/frequency domain simulations** using **MATLAB**.
 
 It demonstrates the full engineering workflow from theoretical formulation to simulation, visualization, and result extraction – all structured for clarity, reproducibility and clean repository presentation.
 
@@ -9,9 +9,9 @@ It demonstrates the full engineering workflow from theoretical formulation to si
 digital-control-lab/
 ├── code/            ← All MATLAB code (main.m, functions, etc.)
 ├── plots/           ← Auto-generated figures: step response, bode, pzmap
-├── report/          ← Original lab PDF report
+├── report/          ← Highlighted summary from the report 
 ├── Theory/          ← Includes theory background and numeric summary
-└── README.md        ← This file – project overview
+└── README.md        ← This file – project overview  
 
 ## ⚙️ Key Concepts
 
