@@ -1,0 +1,52 @@
+🧠 Theoretical Background – Digital State Feedback & Observer
+
+	1.	Discrete-Time State-Space Model
+A linear discrete-time system is modeled as:
+  x[k+1] = A·x[k] + B·u[k],  y[k] = C·x[k] + D·u[k]
+where x is the state vector, u is the input, and y is the output.
+⸻
+	2.	State Feedback
+The goal of state feedback is to control system dynamics using:
+  u[k] = –R·x[k] + ρ·r[k]
+The gain R is selected so that A₍cl₎ = A – B·R places the closed-loop poles as desired.
+ρ ensures stable tracking of a reference signal r[k].
+⸻
+	3.	DC Gain Compensation
+To eliminate steady-state error and ensure accurate tracking:
+  ρ = Gₛₛ / [C·(z·I – A₍cl₎)⁻¹·B], with z = 1
+This guarantees that y[k] → r[k] in steady state.
+⸻
+	4.	Luenberger Observer
+When not all states can be measured, an observer is used:
+  ẋ̂[k+1] = A·x̂[k] + B·u[k] + L·(y[k] – C·x̂[k])
+The observer gain L is designed so that the estimation error x – x̂ converges quickly by placing the poles of A – L·C appropriately.
+⸻
+	5.	Dead-Beat Observer
+Setting observer poles at the origin (z = 0) ensures the estimation error reaches zero in a finite number of steps
+(usually ≤ number of states). Best suited for low-noise discrete systems.
+⸻
+	6.	Separation Principle
+In linear systems, the controller (R) and observer (L) can be designed independently. 
+The overall system remains stable with A – B·R and A – L·C governing dynamics separately.
+This principle enables modular design.
+⸻
+	7.	Observability Condition
+An observer can be constructed only if the system is observable, meaning the observability matrix:
+  𝓞 = [C; C·A; C·A²; …]
+has full rank. This must be verified before designing L.
+⸻
+	8.	Nyquist Sampling and Discrete Design
+Sampling must satisfy the Nyquist criterion (twice the highest system frequency) to preserve signal integrity. 
+If sampling is too slow, poles may shift outside the unit circle, causing instability.
+⸻
+	9.	Observer Error Convergence
+The estimation error e[k] = x[k] – x̂[k] converges to zero at a rate set by the observer poles.
+The closer the poles are to the origin, the faster the convergence—though this increases sensitivity to noise.
+⸻
+	10.	Practical Use
+Observers are essential when sensor access is limited or expensive.
+Combined with state feedback, they enable smart systems with minimal direct measurement.
+
+Conclusion
+Combining state feedback, observer design, and DC gain compensation allows precise control of discrete-time systems. 
+The separation principle ensures flexible and modular analysis, forming a foundational approach to digital control design.
