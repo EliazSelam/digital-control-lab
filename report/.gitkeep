@@ -1,1 +1,47 @@
+📄 Digital Control Lab – Observer-Based Control Simulation Report
 
+🔧 Project Overview
+
+This project demonstrates a discrete-time control system design using state feedback and a dead-beat observer. The full simulation is implemented in MATLAB and includes both controller-only and observer-based configurations, with visual comparisons and error analysis.
+
+⚙️ System Definition
+	•	State matrix A = [0 0.5; 0 2]
+	•	Input matrix B = [0.1; 1]
+	•	Output matrix C = [1 -1]
+	•	Sampling time Ts = 0.2 s
+
+🧮 Design Specifications
+	•	Feedback poles chosen via characteristic polynomial:
+D_w(z) = z^2 - 1.6z + 0.64
+	•	Observer poles (dead-beat):
+D_e(z) = z^2
+	•	DC gain target: 10
+	•	Gains computed using acker().
+
+🧠 Key Components
+	•	State Feedback Gain R
+	•	Observer Gain L
+	•	DC Gain ρ computed to ensure unity gain at steady-state for r_in = 1
+
+📊 Simulation Results
+
+Simulation compares:
+	•	Controller-only system: assumes full state knowledge.
+	•	Observer-based system: uses estimated state via observer.
+
+📁 Output Files:
+
+All plots are saved under /DigitalControlPlots/:
+	•	pzmap.png: Pole-zero map of the closed-loop system
+	•	step_response.png: Step response of the system
+	•	simulation_comparison.png: Comparison of output y(k) with and without observer
+	•	state_estimation_error.png: Estimation error x - x̂ over time
+
+📌 Highlights
+	•	Clear comparison between controller designs
+	•	Dead-beat observer reaches convergence in just a few steps
+	•	Simulation is modular and beginner-friendly
+
+💬 Next Steps
+	•	Try different pole placements and sampling times
+	•	Extend to MIMO systems or unstable plants
